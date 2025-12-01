@@ -24,3 +24,16 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Small button hover effect used by primary CTAs */
+.btn-hover {
+  transition: transform 180ms cubic-bezier(.22,.9,.31,1), box-shadow 180ms cubic-bezier(.22,.9,.31,1), opacity 180ms;
+}
+.btn-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.btn-hover:active {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
